@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Арсенал оружия против вампиров">
+  <title>Арсенал — Оружейная Слоника</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark-custom sticky-top" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand fw-semibold text-uppercase" href="index.html">🐘 Оружейная Слоника</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Арсенал</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4">
+
+    <section class="page-hero p-4 p-md-5 mb-4">
+      <h1 class="display-6 mb-2">Арсенал</h1>
+      <p class="text-secondary mb-0">Выбирайте оружие. Сетка Bootstrap <code>col-*</code> адаптируется под экран.</p>
+    </section>
+
+    <section class="mb-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="catalog-filters d-flex flex-wrap gap-2" role="group" aria-label="Фильтр по категориям">
+            <button class="btn btn-sm btn-outline-brand active" type="button">Все</button>
+            <button class="btn btn-sm btn-outline-brand" type="button">Огнестрел</button>
+            <button class="btn btn-sm btn-outline-brand" type="button">Холодное</button>
+            <button class="btn btn-sm btn-outline-brand" type="button">Химия</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <label class="form-label small mb-1" for="sortSelect">Сортировка</label>
+          <select class="form-select form-select-sm" id="sortSelect" name="sort">
+            <option>Сначала смертоносные</option>
+            <option>Сначала дешёвые</option>
+            <option>Сначала дорогие</option>
+            <option>Проверено Слоником</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4" aria-label="Список товаров">
+      <div class="row g-3">
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/i.webp" class="card-img-top" alt="Осиновый кол" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Кол «Дубовый»</h2>
+                <span class="badge badge-accent">Новинка</span>
+              </div>
+              <p class="card-text text-secondary small">Холодное · Осина, ручная заточка</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">1 490 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/hbaivjbygdzryg7ytt5b7tw10hkmf7fh.webp" class="card-img-top" alt="Серебряные пули" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Пули «Серебро 925»</h2>
+                <span class="badge text-bg-secondary">Хит</span>
+              </div>
+              <p class="card-text text-secondary small">Огнестрел · Калибр 12/70, 10 шт.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">3 900 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/72f77d430eb3e04d6f5a1c2ad804fc0b.jpeg" class="card-img-top" alt="Чеснок" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Чеснок «Смертельный»</h2>
+                <span class="badge text-bg-info">Скидка</span>
+              </div>
+              <p class="card-text text-secondary small">Химия · Пучок 5 кг</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">890 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/uf fanar.webp" class="card-img-top" alt="УФ-фонарь" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">УФ-фонарь «Рассвет»</h2>
+                <span class="badge text-bg-secondary">Хит</span>
+              </div>
+              <p class="card-text text-secondary small">Огнестрел · 5000 люмен, слепит вампиров</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">4 500 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/arbalet.webp" class="card-img-top" alt="Арбалет" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Арбалет «Ван Хельсинг»</h2>
+                <span class="badge badge-accent">Новинка</span>
+              </div>
+              <p class="card-text text-secondary small">Огнестрел · В комплекте 3 осиновых болта</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">15 000 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/banan.webp" class="card-img-top" alt="Бананы" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Бананы для Слоника</h2>
+                <span class="badge text-bg-success">Слоник</span>
+              </div>
+              <p class="card-text text-secondary small">Провизия · Свежие, 1 кг</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">150 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card product-card h-100" style="border-color: #22c55e;">
+            <img src="images/secret.jpg" class="card-img-top" alt="Секретный товар" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h2 class="h5 card-title mb-0">Секретный товар</h2>
+                <span class="badge" style="background-color: #22c55e; color: #052e16;">18+</span>
+              </div>
+              <p class="card-text text-secondary small">Система жизнеобеспечения · Гауптвахта</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Бесценно</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <nav aria-label="Пагинация каталога" class="mt-4">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Назад</a></li>
+        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Вперёд</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 fw-semibold">🐘 Оружейная Слоника</p>
+          <p class="mb-0">Контрольная работа №2 — Bootstrap 5.3 <span id="secretBtn" style="cursor: pointer; opacity: 0.1; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.1'">🟢</span></p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a href="contacts.html">Контакты</a> · <a href="order.html">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="secretToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="background-color: #052e16; border: 1px solid #22c55e;">
+      <div class="toast-header" style="background-color: #22c55e; color: #052e16;">
+        <strong class="me-auto">🐘 Секретное сообщение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body text-light" style="font-family: monospace;">
+        "Братишка, я тебе покушать принёс..."<br>
+        <small class="text-success mt-2 d-block">Слоник передаёт привет.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('secretBtn').addEventListener('click', function() {
+      var toastEl = document.getElementById('secretToast');
+      var toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  </script>
+</body>
+</html>

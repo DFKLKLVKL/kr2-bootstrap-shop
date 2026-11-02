@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Оружейная Слоника — магазин снаряжения против вампиров и оборотней">
+  <title>Главная — Оружейная Слоника</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark-custom sticky-top" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand fw-semibold text-uppercase" href="index.html">🐘 Оружейная Слоника</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Арсенал</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4">
+
+    <section class="hero p-4 p-md-5 mb-4">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <span class="badge badge-accent mb-3">Bootstrap 5.3 · 100% защита от укусов</span>
+          <h1 class="display-5 mb-3">Оружие против вампиров и оборотней</h1>
+          <p class="lead text-secondary mb-4">Хватит прятаться в шкафу. Вооружайся! Серебряные пули, осиновые колья, УФ-фонари и чеснок оптом. Зелёный слоник лично проверил каждую партию на себе (он бессмертный).</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-brand" href="catalog.html">Открыть арсенал</a>
+            <button class="btn btn-outline-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Срочный вызов</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <img src="images/XvYouYy7AmbxwRXMAY1Uqx2uQCBc--vAolVbim4bv-t272CXbFYhwmY0rVKAABJ5zQ9laq-oBPSZ9Vf4gmPT-2Aq.jpg" class="img-fluid rounded" alt="Слоник с дробовиком">
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title mb-3">Почему мы?</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-success mb-2">Сертификат</span>
+              <h3 class="h5 card-title">Одобрено Слоником</h3>
+              <p class="card-text text-secondary mb-0">Каждый кол проверен лично. Если вампир не сдох — вернём деньги.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-warning mb-2">Доставка</span>
+              <h3 class="h5 card-title">Экспресс на рассвете</h3>
+              <p class="card-text text-secondary mb-0">Доставим до восхода солнца. Вампиры не успеют добраться до вас первыми.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-secondary mb-2">Гарантия</span>
+              <h3 class="h5 card-title">Безопасность 24/7</h3>
+              <p class="card-text text-secondary mb-0">Наши консультанты не спят. В прямом смысле. Они тоже вампиры, но хорошие.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" aria-labelledby="popular-title">
+      <div class="d-flex justify-content-between align-items-end mb-3 flex-wrap gap-2">
+        <h2 id="popular-title" class="section-title mb-0">Хиты продаж</h2>
+        <a href="catalog.html" class="link-secondary">Весь арсенал →</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/i.webp" class="card-img-top" alt="Осиновый кол" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 card-title mb-0">Кол «Дубовый»</h3>
+                <span class="badge badge-accent">Новинка</span>
+              </div>
+              <p class="card-text text-secondary">Осина, ручная заточка. Идеально входит в сердце.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">1 490 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/hbaivjbygdzryg7ytt5b7tw10hkmf7fh.webp" class="card-img-top" alt="Серебряные пули" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 card-title mb-0">Пули «Серебро 925»</h3>
+                <span class="badge text-bg-secondary">Хит</span>
+              </div>
+              <p class="card-text text-secondary">Набор 10 шт. Для оборотней и не только.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">3 900 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card product-card h-100">
+            <img src="images/72f77d430eb3e04d6f5a1c2ad804fc0b.jpeg" class="card-img-top" alt="Чеснок" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 card-title mb-0">Чеснок «Смертельный»</h3>
+                <span class="badge text-bg-info">Скидка</span>
+              </div>
+              <p class="card-text text-secondary">Пучок 5 кг. Отпугивает вампиров и коллег.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">890 ₽</span>
+                <a class="btn btn-sm btn-outline-brand" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="alert alert-custom" role="alert">
+        <strong>Внимание:</strong> Осторожно, вампиры умеют читать мысли. Не думайте о нашем арсенале слишком громко.
+      </div>
+    </section>
+
+    <section class="mb-5" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section-title mb-3">Инструкция по выживанию</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">Что делать, если вампир в доме?</button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Не приглашайте его войти. Срочно закажите у нас УФ-фонарь и осиновый кол. Слоник вышлет курьера верхом на волке.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Помогает ли чеснок от оборотней?</button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Нет, но отлично помогает от комаров. Для оборотней берите серебро и побольше патронов 12-го калибра.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">А слоник точно выживет?</button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Слоник — древнее существо, он пережил даже 90-е. Вампиры ему не страшны.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 fw-semibold">🐘 Оружейная Слоника</p>
+          <p class="mb-0">Контрольная работа №2 — Bootstrap 5.3 <span id="secretBtn" style="cursor: pointer; opacity: 0.1; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.1'">🟢</span></p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a href="contacts.html">Контакты</a> · <a href="order.html">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalLabel">Срочный вызов</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label" for="modalName">Ваше имя</label>
+              <input class="form-control" id="modalName" name="name" type="text" placeholder="Белла Свон" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="modalEmail">Электронная почта</label>
+              <input class="form-control" id="modalEmail" name="email" type="email" placeholder="bella@example.ru" required>
+            </div>
+            <div>
+              <label class="form-label" for="modalMessage">Кто напал?</label>
+              <textarea class="form-control" id="modalMessage" name="message" rows="3" required placeholder="Вампир, оборотень или зомби..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="modal">Отмена</button>
+            <button class="btn btn-brand" type="submit">Вызвать слоника</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="secretToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="background-color: #052e16; border: 1px solid #22c55e;">
+      <div class="toast-header" style="background-color: #22c55e; color: #052e16;">
+        <strong class="me-auto">🐘 Секретное сообщение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body text-light" style="font-family: monospace;">
+        "Братишка, я тебе покушать принёс..."<br>
+        <small class="text-success mt-2 d-block">Слоник передаёт привет.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('secretBtn').addEventListener('click', function() {
+      var toastEl = document.getElementById('secretToast');
+      var toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  </script>
+</body>
+</html>

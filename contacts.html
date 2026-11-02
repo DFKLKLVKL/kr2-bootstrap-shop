@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Контакты Оружейной Слоника">
+  <title>Контакты — Оружейная Слоника</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark-custom sticky-top" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand fw-semibold text-uppercase" href="index.html">🐘 Оружейная Слоника</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Арсенал</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4">
+
+    <section class="page-hero p-4 p-md-5 mb-4">
+      <h1 class="display-6 mb-2">Контакты</h1>
+      <p class="text-secondary mb-0">Свяжитесь с нами. Слоник на связи 24/7.</p>
+    </section>
+
+    <div class="row g-4">
+
+      <div class="col-12 col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h5 card-title mb-3">Реквизиты магазина</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between"><span class="text-secondary">Адрес</span><span>г. Форкс, Гауптвахта</span></li>
+              <li class="list-group-item d-flex justify-content-between"><span class="text-secondary">Телефон</span><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+              <li class="list-group-item d-flex justify-content-between"><span class="text-secondary">E-mail</span><a href="mailto:elephant@twilight.ru">elephant@twilight.ru</a></li>
+              <li class="list-group-item d-flex justify-content-between"><span class="text-secondary">Часы работы</span><span>Круглосуточно (вампиры не спят)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h5 card-title mb-3">Карта</h2>
+            <div class="product-main-img" style="min-height: 260px;">
+              images/map.jpg<br><small>(Схема: где-то между Форксом и банановой рощей)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="alert alert-custom mb-0" role="alert">
+          Это учебный проект. Реальные контакты не используются, вампиры не пострадали.
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 fw-semibold">🐘 Оружейная Слоника</p>
+          <p class="mb-0">Контрольная работа №2 — Bootstrap 5.3 <span id="secretBtn" style="cursor: pointer; opacity: 0.1; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.1'">🟢</span></p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a href="contacts.html">Контакты</a> · <a href="order.html">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="secretToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="background-color: #052e16; border: 1px solid #22c55e;">
+      <div class="toast-header" style="background-color: #22c55e; color: #052e16;">
+        <strong class="me-auto">🐘 Секретное сообщение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body text-light" style="font-family: monospace;">
+        "Братишка, я тебе покушать принёс..."<br>
+        <small class="text-success mt-2 d-block">Слоник передаёт привет.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('secretBtn').addEventListener('click', function() {
+      var toastEl = document.getElementById('secretToast');
+      var toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  </script>
+</body>
+</html>
